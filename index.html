@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1 id="headline">Forms with JS</h1>
+
+    <form action="" onsubmit="return false">
+        <label for="">Firstname:</label>
+        <input type="text" name="firstname" id="first-name" placeholder="Firstname">
+        <input type="button" value="Send" onclick="showFirstName()">
+        <!-- <input type="submit" value="Submit" onclick="showFirstName()"> -->
+        <div>
+            <input type="text" name="lastname" id="last-name" placeholder="Lastname" onchange="showLastName()">
+        </div>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <label for="points">Points (between 0 to 100):</label>
+            <input type="range" name="points" id="points" min="0" max="100" step="10" onchange="showPoints()">
+            <select name="moods" id="moods" onchange="showMoods()">
+                <option value="power">Power</option>
+                <option value="okay" selected>Okay</option>
+                <option value="sleep">Sleep</option>
+            </select>
+            <input type="button" value="Click Me" onclick="sayHi()">
+        </fieldset>
+    </form>
+
+    <!-- <section> -->
+    <button onclick="myButton()">Button</button>
+    <!-- </section> -->
+
+    <form action="">
+        <fieldset>
+            <div>
+                <label for="">Firstname</label>
+                <input type="text" name="" id="firstname" placeholder="Firstname">
+            </div>
+            <div>
+                <label for="">Lastname</label>
+                <input type="text" name="" id="laststname" placeholder="Lastname">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="" id="email" placeholder="Email">
+            </div>
+            <div>
+                <select name="" id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <input type="button" value="Check Me" onclick="showFormValues()">
+        </fieldset>
+    </form>
+
+    <h2 id="change-text">Change Text</h2>
+    <button onclick="hideButtons()">Hide Text</button>
+
+    <section id="change-mode">
+        <h3>Change Mode</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis incidunt rem illo
+            dolores! Sint
+            commodi ullam illum aut error, a quo harum placeat consequuntur vel non. Ratione, natus nostrum?
+            Eveniet sequi debitis blanditiis ea fugit quia veritatis enim aperiam libero assumenda, dignissimos eius
+            fuga ratione delectus voluptas cum praesentium perspiciatis id necessitatibus aspernatur quidem non rem
+            distinctio facilis? Sapiente?
+            Explicabo inventore earum, deleniti consectetur blanditiis quos saepe quidem obcaecati, tempora omnis
+            aliquid. Vero iste a, qui sit nesciunt magnam est doloribus ducimus sunt veniam odit pariatur dicta fugiat
+            voluptas.</p>
+
+        <button onclick="darkMode()">Dark Mode</button>
+        <button onclick="lightMode()">Light Mode</button>
+    </section>
+
+    <form action="" onsubmit="return false">
+        <fieldset>
+            <input type="number" name="" id="alter1" placeholder="Alter Person 1">
+            <input type="number" name="" id="alter2" placeholder="Alter Person 2">
+            <input type="button" value="Calculate" onclick="caculate()">
+            <input type="submit" value="Calc">
+            <div id="result">Ergebnis</div>
+        </fieldset>
+
+    </form>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
